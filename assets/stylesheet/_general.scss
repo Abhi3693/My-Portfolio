@@ -1,0 +1,57 @@
+h1,h2,h3,h4,h5,h6,p,span,small, address{
+    font-family: 'Prompt', sans-serif;
+    color: #122d52;
+    line-height: 1.5;
+}
+a{
+    font-family: 'Prompt', sans-serif;
+    color: #122d52;
+}
+%margin-top-bottom{
+    margin: 7rem;
+}
+
+%eleFix{
+    width: 80;
+    margin-left: 25%;
+}
+*{
+    box-sizing: border-box;
+}
+
+h1{
+    font-size: 36px;
+    font-weight: 800;
+}
+
+h2{
+    font-size: 2.5rem;
+    padding-bottom: 20px;
+    font-weight: 600 ;
+}
+
+h3{
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+h4{
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+
+.empty{
+    width: 10%;
+    margin-top: 20px;
+    height: 3px;    
+    background: #149ddd;    
+    margin-bottom: 30px;
+}
+
+.icon-holder{
+    width: 40px;
+    height: 40px;
+    display: grid;
+    place-content: center;
+    border-radius: 50%;
+}

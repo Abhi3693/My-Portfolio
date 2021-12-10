@@ -1,0 +1,335 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+h1, h2, h3, h4, h5, h6, p, span, small, address {
+  font-family: "Prompt", sans-serif;
+  color: #122d52;
+  line-height: 1.5;
+}
+
+a {
+  font-family: "Prompt", sans-serif;
+  color: #122d52;
+}
+
+#contact, #about {
+  margin: 7rem;
+}
+
+#contact, #about {
+  width: 80;
+  margin-left: 25%;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+h1 {
+  font-size: 36px;
+  font-weight: 800;
+}
+
+h2 {
+  font-size: 2.5rem;
+  padding-bottom: 20px;
+  font-weight: 600;
+}
+
+h3 {
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+h4 {
+  font-size: 1.3rem;
+  font-weight: 500;
+}
+
+.empty {
+  width: 10%;
+  margin-top: 20px;
+  height: 3px;
+  background: #149ddd;
+  margin-bottom: 30px;
+}
+
+.icon-holder {
+  width: 40px;
+  height: 40px;
+  display: grid;
+  place-content: center;
+  border-radius: 50%;
+}
+
+.container {
+  width: 100%;
+}
+
+.side-bar {
+  z-index: 99999;
+  width: 20%;
+  background-color: black;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  top: 0;
+  text-align: center;
+}
+.side-bar .about-img-holder {
+  margin-top: 100px;
+}
+.side-bar img {
+  width: 100%;
+  height: 200px;
+  border-radius: 50%;
+}
+.side-bar h2 {
+  font-size: 30px;
+  font-weight: 600;
+  color: #fff;
+  margin: 30px 0;
+}
+
+.about-img-holder {
+  background-image: linear-gradient(to right top, red, yellow, navy);
+  padding: 3px;
+  display: inline-block;
+  border-radius: 50%;
+  font-size: 0;
+}
+
+.social-media-holder {
+  display: flex;
+  justify-content: space-evenly;
+}
+.social-media-holder li {
+  background-color: gray;
+}
+.social-media-holder li:hover {
+  background-color: #70caed;
+}
+.social-media-holder li:hover i {
+  color: #04799d;
+}
+.social-media-holder i {
+  font-size: 20px;
+  color: #fff;
+}
+
+.pages-holder {
+  text-align: left;
+  margin: 50px 0 0 30px;
+}
+.pages-holder i {
+  margin-right: 30px;
+  color: gray;
+  font-size: 20px;
+}
+.pages-holder li {
+  margin-top: 20px;
+}
+.pages-holder li:hover i {
+  color: skyblue;
+}
+.pages-holder li a {
+  transition-property: all;
+  transition-duration: 0.5s;
+  transition-timing-function: ease-in;
+}
+.pages-holder li a:hover {
+  color: #fff;
+}
+.pages-holder a {
+  color: gray;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+#home {
+  width: 100%;
+  position: relative;
+}
+#home img {
+  width: 100%;
+}
+
+.intro {
+  position: absolute;
+  border-radius: 10px;
+  padding: 50px;
+  width: 50%;
+  margin: 0 auto;
+  box-shadow: 4px 4px 10px gray;
+  margin-top: -150px;
+  z-index: 9;
+  left: 30%;
+  background-color: #fff;
+}
+.intro .intro-holder {
+  display: flex;
+}
+.intro p {
+  font-size: 25px;
+  margin-top: 20px;
+}
+.intro .active-span {
+  margin-left: 10px;
+}
+
+#about p {
+  font-size: 20px;
+}
+
+.experience .company-info {
+  box-shadow: 4px 4px 10px lightgray;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  border-radius: 10px;
+  margin-top: 30px;
+}
+.experience span {
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+.experience .exp-year {
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+#contact .contact-holder {
+  display: flex;
+  justify-content: space-between;
+}
+#contact .contact-sidebar {
+  width: 40%;
+}
+#contact .adrress-card {
+  box-shadow: 4px 4px 10px lightgray;
+  padding: 20px;
+}
+#contact .adrress-card address {
+  font-size: 16px;
+}
+#contact .adrress-card h4 {
+  margin: 20px 0;
+}
+#contact .icon-holder {
+  background-color: #dff3fd;
+}
+#contact .icon-holder i {
+  color: #119ddd;
+}
+#contact .contact-main {
+  width: 55%;
+  box-shadow: 4px 4px 10px lightgray;
+  padding: 20px;
+}
+#contact input {
+  padding: 10px;
+  border: 1px solid lightgray;
+  font-size: 18px;
+  width: 100%;
+  margin-bottom: 20px;
+  border-radius: 10px;
+}
+#contact input:hover {
+  border: 1px solid gray;
+}
+#contact input:focus {
+  border: 1px solid orange;
+}
+#contact #message {
+  width: 100%;
+  border-radius: 10px;
+  border: 1px solid lightgray;
+}
+#contact #message:hover {
+  border: 1px solid gray;
+}
+#contact .btn {
+  border-radius: 10px;
+  background-color: #0e40bd;
+  padding: 5px 30px;
+  margin-top: 20px;
+}
+#contact .btn a {
+  color: #fff;
+  font-size: 18px;
+  text-decoration: none;
+}
+
+.project-img {
+  width: 80%;
+  margin-left: 20%;
+}
+.project-img img {
+  width: 100%;
+}
+
+.project-info {
+  width: 80%;
+  margin: 80px 0;
+  margin-left: 30%;
+}
+.project-info a {
+  display: block;
+  text-decoration: none;
+}
+.project-info .description {
+  display: block;
+  margin-top: 20px;
+}/*# sourceMappingURL=style.css.map */

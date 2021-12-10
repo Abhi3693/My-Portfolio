@@ -1,0 +1,244 @@
+@import "reset";
+@import "general";
+
+.container{
+    width: 100%;
+}
+
+// Side Bar
+.side-bar{
+    z-index: 99999;
+    width: 20%;
+    background-color: black;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    top: 0;
+    .about-img-holder{
+        margin-top: 100px;
+    }
+    img{
+        width: 100%;
+        height: 200px;
+        border-radius: 50%;     
+    }
+    text-align: center;
+    h2{
+        font-size: 30px;
+        font-weight: 600;
+        color: #fff;
+        margin: 30px 0;
+    }
+}
+.about-img-holder{
+    background-image: linear-gradient(to right top , red, yellow, navy);
+    padding: 3px;
+    display: inline-block;
+    border-radius: 50%;
+    font-size: 0;
+}
+.social-media-holder{
+    display: flex;
+    justify-content: space-evenly;
+    li{
+        background-color: gray;
+        &:hover{
+            background-color: rgb(112, 202, 237);
+            i{
+                color: rgb(4, 121, 157);
+            }
+        }
+    }
+    i{
+        font-size: 20px;
+        color: #fff;
+    }
+}
+.pages-holder{
+    text-align: left;
+    margin: 50px 0 0 30px;
+    i{
+        margin-right: 30px;
+        color: gray;
+        font-size: 20px;
+    }
+    li{
+        margin-top: 20px;
+        &:hover i{
+            color: skyblue;
+        }
+        a{
+            transition-property: all;
+            transition-duration: 0.5s;
+            transition-timing-function: ease-in;
+            &:hover {
+                color: #fff;
+            }
+        }
+    }
+    
+    a{
+        color: gray;
+        font-size: 20px;
+        text-decoration: none;
+    }
+    
+}
+
+// Home
+
+#home{
+    width: 100%;
+    img{
+        width: 100%;
+    }
+   position: relative;
+}
+
+// Intro
+
+.intro{
+    position: absolute;
+    border-radius: 10px;
+    .intro-holder{
+        display: flex;
+    }
+    p{
+        font-size: 25px;
+        margin-top: 20px;
+    }
+    padding: 50px;
+    width: 50%;
+    margin: 0 auto;
+    box-shadow: 4px 4px 10px gray;
+    margin-top: -150px;
+    z-index: 9;
+    left: 30%;
+    background-color:#fff ;
+    .active-span{
+        margin-left: 10px;
+    }
+}
+
+// about
+#about{
+    @extend %margin-top-bottom;
+    @extend %eleFix;
+    p{
+        font-size: 20px;
+    }
+}
+
+.experience{
+
+    .company-info{
+        box-shadow: 4px 4px 10px lightgray;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px;
+        border-radius: 10px;
+        margin-top: 30px;
+    }
+    span{
+        font-size: 1.5rem;
+        font-weight: 500;
+    }
+    .exp-year{
+        font-size: 2rem;
+        font-weight: 500;
+    }
+}
+
+// Contact
+#contact{
+    @extend %margin-top-bottom;
+    @extend %eleFix;
+    .contact-holder{
+        display: flex;
+        justify-content: space-between;
+    }
+    .contact-sidebar{
+        width: 40%;
+    }
+    .adrress-card{
+        box-shadow: 4px 4px 10px lightgray;
+        padding: 20px;
+        address{
+            font-size: 16px;
+        }
+        h4{
+            margin: 20px 0;
+        }
+    }
+    .icon-holder{
+        background-color: rgb(223,243,253); 
+        i{
+            color: rgb(17,157,221);
+        }
+    }
+    .contact-main{
+        width: 55%;
+        box-shadow: 4px 4px 10px lightgray;
+        padding: 20px;
+    }
+    input{
+        padding: 10px;
+        border: 1px solid lightgray;
+        font-size: 18px;
+        width: 100%;
+        margin-bottom: 20px;
+        border-radius: 10px;
+        &:hover{
+            border: 1px solid gray;
+        }
+        &:focus{
+            border: 1px solid orange;
+        }
+    }
+    #message{
+        width: 100%;
+        border-radius: 10px;
+        border: 1px solid lightgray;
+        &:hover{
+            border: 1px solid gray;
+        }
+    }
+    .btn{
+        border-radius: 10px;
+        background-color: rgb(14, 64, 189);
+        padding: 5px 30px;
+        margin-top: 20px;
+        a{
+            color: #fff;
+            font-size: 18px;
+            text-decoration: none;
+        }
+    }
+}
+
+
+// Project
+
+.project-img{
+    width: 80%;
+    margin-left: 20%;
+    img{
+        width: 100%;
+    }
+}
+.project-info{
+    width: 80%;
+    margin: 80px 0;  
+    margin-left: 30%;
+    
+    a{
+        display: block;
+        text-decoration: none;
+        
+    } 
+    .description{
+        display: block;
+        margin-top: 20px;
+    }
+}
